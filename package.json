@@ -1,6 +1,6 @@
 {
   "name": "scupdate",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Update all NPM packages with a given scope",
   "author": "Ed Johnson, Hypericon Ltd.",
   "license": "MIT",
