@@ -13,7 +13,7 @@ const argv = yargs(process.argv.slice(2)).options({
 // Main function to perform the tasks
 async function main() {
 
-  console.log("argv:", argv);
+  // console.log("argv:", argv);
 
   const arg: string = String(argv._[0] ?? ""); // process.argv[2];
   if (!arg) {
