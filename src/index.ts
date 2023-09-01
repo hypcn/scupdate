@@ -84,7 +84,7 @@ async function updatePackages(scope: string, packages: string[], opts?: { global
     ? `npm i ${global ? "-g" : ""} ${packages.map(p => p + "@latest").join(' ')}`
     : `npm update ${global ? "-g" : ""} ${packages.join(' ')}`;
 
-  console.log(`Updating ${global ? "global packages" : "packages"} with the scope ${scope}:`);
+  console.log(`${force ? "Forcefully updating" : "Updating"} ${global ? "global packages" : "packages"} with the scope ${scope}:`);
   console.log(packages);
 
   return new Promise((resolve, reject) => {
